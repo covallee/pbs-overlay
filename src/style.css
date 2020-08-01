@@ -27,14 +27,22 @@ body {
     height: 1080px;
     display: grid;
     grid-template:  '.   .     .      .     . ' 10px
-                    '.  video video  video   . ' 480px
-                    '.  video video  video  . ' 1fr
-                    '.  chat second title . ' 80px 
+                    '.  . video  video   . ' 1fr
+                    '.  chat video  video  . ' 300px
+                    '.  chat second title . ' 90px 
                     '.   .      .     .     . ' 10px /
                      10px 500px 1fr  400px  10px;
-    /* border: var(--border); */
     box-sizing: border-box;
-    
+}
+
+.overlay--interview {
+    grid-template:  '.   .     .      .     . ' 10px
+                    '.  video video  video   . ' 1fr
+                    '.  video video  video  . ' 300px
+                    '.  chat second . . ' 200px 
+                    '.  chat second title . ' 90px 
+                    '.   .      .     .     . ' 10px /
+     10px 500px 1fr  400px  10px;
 }
 
 
@@ -118,6 +126,7 @@ img {
 .chat {
     grid-area: chat;
     border-right: 4px solid #dad8d8;
+    
 }
 
 .chat__title {
@@ -125,8 +134,12 @@ img {
     color: #878787;
     font-size: 1.5rem;
     padding: 8px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    line-height: 1;
 }
 
 .bordered {
@@ -135,4 +148,25 @@ img {
 
 .secondary {
     grid-area: second;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.panel {
+    width: 853px;
+    height: 505px;
+    border: 5px solid var(--border-color);
+    display: flex;
+    align-items: flex-end;
+}
+
+.panel__title {
+    height: 60px;
+    width: 400px;
+    background-color: #dad8d8;
 }
