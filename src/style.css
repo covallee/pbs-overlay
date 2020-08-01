@@ -36,6 +36,7 @@ body {
 }
 
 .overlay--interview {
+    background-color: #fff;
     grid-template:  '.   .     .      .     . ' 10px
                     '.  video video  video   . ' 1fr
                     '.  video video  video  . ' 300px
