@@ -154,7 +154,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
 .panel {
@@ -163,6 +162,10 @@ img {
     border: 5px solid var(--border-color);
     display: flex;
     align-items: flex-end;
+}
+
+.panel-1 {
+    margin-left: 30px
 }
 
 .panel__title {
